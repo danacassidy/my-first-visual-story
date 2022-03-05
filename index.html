@@ -9,7 +9,7 @@
 {% endblock scripts -%}
 
 
-{% block headline %}Dana's SUPER awesome headline{% endblock headline %}
+{% block headline %}Default Headline{% endblock headline %}
 {% block byline %}By Dana Cassidy{% endblock byline %}
 {% block pubdate %}
   <time datetime="2022-03-05" pubdate>Mar. 5, 2022</time>
@@ -18,7 +18,7 @@
 {% block content %}
 
 {% for obj in harvard_park_homicides %}
-    {{ obj.first_name }} {{ obj.last_name }}<br>
+  {{ obj.first_name }} {{ obj.last_name }}<br>
 {% endfor %}
 
 {% endblock content %}
